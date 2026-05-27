@@ -135,7 +135,7 @@
       const uuid = encodeURIComponent(uuidEl.value.trim());
       const path = encodeURIComponent(pathEl.value.trim() || "/");
       const remark = encodeURIComponent(remarkEl.value.trim() || "ghtun");
-      return `vless://${uuid}@${endpoint}:${port}?encryption=none&security=tls&type=xhttp&mode=packet-up&sni=${encodeURIComponent(sniEndpoint)}&path=${path}#${remark}`;
+      return `vless://${uuid}@${endpoint}:${port}?encryption=none&security=tls&type=ws&mode=packet-up&sni=${encodeURIComponent(sniEndpoint)}&path=${path}#${remark}`;
     }
 
     function getConfigs() {
